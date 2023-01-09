@@ -1,0 +1,18 @@
+//sum with unit digit x
+#include<stdio.h>
+void main(){
+	int n,i,sum=0,x;
+	scanf("%d%d",&n,&x);
+	int a[n];
+	for(i=0;i<n;i++)
+		scanf("%d",&a[i]);
+	for(i=0;i<n;i++)
+	{
+		if(a[i]%10 == x)			
+			sum+=a[i];
+	}
+	if(sum==0)
+		printf("-1");
+	else
+		printf("%d",sum);
+}
