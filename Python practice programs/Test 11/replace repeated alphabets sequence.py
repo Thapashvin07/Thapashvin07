@@ -1,0 +1,19 @@
+s=input()
+i=0
+while(i<len(s)):
+    print(s[i],end="")
+    k=1
+    for j in range(i+1,len(s)):
+        if(s[j]!=s[i]):
+            i=j-1
+            break
+        else:
+            if(s[j]=='z'):
+                ch=chr(96)
+                print(chr(ord(ch)+k),end="")
+                k+=1
+            else:
+                print(chr(ord(s[i])+k),end="")
+                k+=1
+            i=j
+    i+=1

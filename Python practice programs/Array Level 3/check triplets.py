@@ -1,0 +1,22 @@
+n=int(input())
+a=[]
+for i in range(n):
+    a.append(int(input()))
+while(i<n):
+    temp=a[i]*a[i]
+    j=i+1
+    while(j<n):
+        k=0
+        while(k<n):
+            if(temp==a[j]**2+a[k]**2):
+                print("yes")
+                break
+            k+=1
+        if(k<n):
+            break
+        j+=1
+    if(j<n):
+        break
+    i+=1
+else:
+    print("no")

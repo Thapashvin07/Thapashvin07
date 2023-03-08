@@ -1,0 +1,10 @@
+n=int(input())
+temp=n
+a=[]
+while(temp!=0):
+    if((temp%10)%2==0):
+        a.append(1)
+    else:
+        a.append(2)
+    temp//=10
+print(a[::-1])

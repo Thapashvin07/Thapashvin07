@@ -1,0 +1,12 @@
+n=int(input())
+sum=0
+product=1
+temp=n
+while(temp):
+    sum+=(temp%10)
+    product*=(temp%10)
+    temp//=10
+if(n%2!=0):
+    print(sum)
+else:
+    print(product)

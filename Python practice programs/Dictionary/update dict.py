@@ -1,0 +1,10 @@
+d1={
+    "brand":"Ford",
+    "model":"Mustang",
+    "year":2010
+}
+d1["year"]=2019
+d1["color"]="white"
+print(d1.get("model"))
+d1.update({"year":2021})
+print(d1)

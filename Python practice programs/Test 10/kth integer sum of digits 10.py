@@ -1,0 +1,10 @@
+sum=0
+k=int(input())
+temp=k
+while(temp!=0):
+    sum+=(temp%10)
+    temp//=10
+if(sum!=10):
+    print(str(k)+str(10-sum))
+else:
+    print(str(k)+"0")

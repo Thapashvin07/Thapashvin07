@@ -1,0 +1,10 @@
+s=input()
+k=int(input())
+pos=k
+while(pos!=0):
+    i=(pos%len(s))-1
+    if(i==-1):
+        print(s[len(s)-1])
+        break
+    print(s[i],end="")
+    pos+=k

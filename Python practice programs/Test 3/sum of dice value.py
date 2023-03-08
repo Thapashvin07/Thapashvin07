@@ -1,0 +1,10 @@
+i=1
+sum=0
+while(i!=0):
+    x=int(input())
+    y=int(input())
+    sum+=x+y
+    if(x!=y):
+        break
+    i+=1
+print(sum)

@@ -1,0 +1,10 @@
+myfamily={
+    "child1":{"name":"thapa","year":2001,"age":22},
+    "child2":{"name":"thapas","year":2003,"age":20},
+    "child3":{"name":"thapash","year":2005,"age":18}
+}
+print(myfamily["child1"]["age"])
+i=1
+while(i<=len(myfamily)):
+    print(myfamily["child"+str(i)]["age"])
+    i+=1

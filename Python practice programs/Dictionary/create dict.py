@@ -1,0 +1,9 @@
+d={
+    "brand":"Ford",
+    "model":"Mustang",
+    "brand":"Maruthi",
+    "year":2010
+}
+print(d)
+print(len(d))
+print(d["year"])

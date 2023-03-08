@@ -1,0 +1,9 @@
+d1=int(input())
+c1=int(input())
+d2=int(input())
+c2=int(input())
+d3=int(input())
+c3=int(input())
+sum=c1+c2+c3
+discount=((c1*d1)/100)+((c2*d2)/100)+((c3*d3)/100)
+print("{:.2f}".format(sum-discount))
